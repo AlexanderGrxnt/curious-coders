@@ -4,21 +4,69 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    box-shadow: 1px 1px 5px rgb(53, 53, 53);
+    box-shadow: 1px 1px 4px rgba(54, 54, 54, 0.5);
     background-color: white;
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 6;
 
     h1{
         line-height: 3rem;
         letter-spacing: -2px;
         margin: 0;
         cursor: pointer;
-        text-shadow: 1px 1px rgb(209, 206, 206);
+        // text-shadow: 1px 1px rgb(209, 206, 206);
     }
 
     i{
         cursor: pointer;
+        padding-right: 20px;
     }
+
+    
+
+    // @include respond(phone) {
+    //     i{
+    //         padding-right: 30px;
+    //     }
+    // }
+    // @include respond(phone-xs) {
+    //     i{
+    //         padding-right: 30px;
+    //     }
+    // }
+    @include respond(tab-port) {
+        i{
+            padding-right: 0px;
+        }
+    }
+
 }
+
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 5rem;
+    z-index: 3;
+    padding-top: 5px;
+    
+    text-align: left;
+    overflow-x: hidden;
+    transition: 0.5s;
+     background-color: #fffffffa; 
+     border: solid;
+     border-width: 1px;
+     border-color: #e3e4e7;
+    right: 0;
+    /* padding:30px; */
+    /* top: 20px; */
+
+    h2{
+        padding-left: 15px;
+    }
+    p{
+        padding-left: 15px;
+    }
+  }

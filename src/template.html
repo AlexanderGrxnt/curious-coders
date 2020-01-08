@@ -28,10 +28,25 @@
 <body>
   <div id="top"></div>
 
+  <!-- **** Nav Section **** -->
   <nav>
     <h1>Curious Coders.</h1>
-    <i class="material-icons">menu</i>
+    <i class="material-icons" onclick="openNav()">menu</i>
   </nav>
+
+  <!-- SIDEBAR NAV -->
+  <div id="overlayNav" class="overlay">
+      <div class="overlay-content">
+          <h2 class="blah menu-title">Flicker...</h2>
+          
+          <hr>
+          <p class="blah">Something</p>
+          <p class="blah">Something</p>
+          <p class="blah">Something</p>
+          <p class="blah">Something</p>
+          <p class="blah">Something</p>
+      </div>
+  </div>
 
   <!-- **** Hero Section **** -->
   <!-- <div id="hero" class="jumbotron"> -->
@@ -63,13 +78,13 @@
       </h2>
       <div class="contact-wrapper">
         <p class="contact-wrapper__text">
-          Interested in working together?
+          Curious Coders is an open source collection of learning snippits and experiments.
         </p>
         <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:alexandergrxnt@gmail.com">Send an email</a>
       </div>
     </div>
   </section>
-  <!-- /END Contact Section -->
+  <!-- /END Intro Section -->
 
   <!-- **** Footer Section **** -->
   <footer class="footer navbar-static-bottom">
@@ -97,6 +112,7 @@
     </div>
   </footer>
   <!-- /END Footer Section -->
+  <script src="./src/js/nav.js"></script>
 </body>
 
 </html>
