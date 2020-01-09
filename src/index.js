@@ -1,4 +1,5 @@
 import initSr from './js/sr';
+import './js/nav.js';
 import './style/main.scss';
 
 $('a[href^="#"]').on('click', function(event) {
