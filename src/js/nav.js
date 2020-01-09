@@ -12,16 +12,18 @@
         open = true;
     } else {
         document.getElementById("overlayNav").style.width = "0%";
+        
         open = false;
     }
   }
-    
-    function closeNav() {
-      document.getElementById("overlayNav").style.width = "0%";
-    
-      //document.getElementById("blankPanel").style.width = "0%";
-    }
+      
+  function closeNav() {
+    document.getElementById("overlayNav").style.width = "0%";
+  
+    //document.getElementById("blankPanel").style.width = "0%";
+  }
 
   menu.addEventListener('click', openNav);
+  
 
 //export default openNav;
