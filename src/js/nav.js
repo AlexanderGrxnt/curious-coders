@@ -1,6 +1,8 @@
 let open = false;
+//let menu = document.querySelector('nav-menu');
 
 function openNav() {
+    console.log("clicked");
 if(open === false){
     if (window.screen.width < 768)
       document.getElementById("overlayNav").style.width = "200px";
@@ -19,3 +21,5 @@ if(open === false){
   
     //document.getElementById("blankPanel").style.width = "0%";
   }
+
+//menu.addEventListener('click', openNav);
