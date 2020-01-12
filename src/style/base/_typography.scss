@@ -6,7 +6,8 @@ h1 {
 }
 
 p,
-a {
+a,
+li {
   //font-family: 'Montserrat', sans-serif;
   font-family: "Work Sans";
   font-size: $default-font-size;
@@ -28,6 +29,14 @@ a:hover {
   text-align: center;
   padding: 15px 0px 10px 0px;
   width: 90vw;
+}
+
+ol{
+  padding-inline-start: 20px;
+
+  h3{
+    padding-inline-start: 0px;
+  }
 }
 
 .section-title {
